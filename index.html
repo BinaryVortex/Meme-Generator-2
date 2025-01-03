@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator with Download Button</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="meme-generator">
+    <h1 class="title">Meme Generator</h1>
+    <div class="form-group">
+      <label for="imageFileInput" class="label">Select an Image</label>
+      <input type="file" id="imageFileInput" class="input">
+    </div>
+    <div class="form-group">
+      <label for="topTextInput" class="label">Top Text</label>
+      <input type="text" id="topTextInput" class="input" placeholder="Enter top text...">
+    </div>
+    <div class="form-group">
+      <label for="bottomTextInput" class="label">Bottom Text</label>
+      <input type="text" id="bottomTextInput" class="input" placeholder="Enter bottom text...">
+    </div>
+    <canvas id="meme" class="canvas"></canvas>
+    <button id="downloadButton">Download Meme</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
